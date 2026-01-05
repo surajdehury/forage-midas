@@ -12,8 +12,6 @@ public class TransactionListener {
         groupId = "midas-core-group"
     )
     public void listen(Transaction transaction) {
-        // Observe the incoming transaction
-        System.out.println("AMOUNT = " + transaction.getAmount());
+        System.out.println(transaction.getAmount());
     }
 }
-
